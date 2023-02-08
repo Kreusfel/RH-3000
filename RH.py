@@ -57,3 +57,4 @@ def list_questions(file, subject):
     return return_questions
   
 start()
+input()
