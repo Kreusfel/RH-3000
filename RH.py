@@ -33,7 +33,7 @@ def read_unique_subjects(data):
 
 def list_subjects():
     input_subjects = input("Entrez les sujets séparés par un ';' : ")
-    subjects = input_subjects.split(";")
+    subjects = list(map(str.strip, input_subjects.split(";")))
     for s in subjects:
         print(s)
     return subjects
